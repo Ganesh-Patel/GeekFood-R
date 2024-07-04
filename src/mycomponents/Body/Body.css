@@ -14,8 +14,8 @@
 .content {
     margin-left: 20%;
     margin-top: -5%;
-    display: flex; 
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 0.5rem;
 }
@@ -31,7 +31,7 @@
     color: #E35047;
 }
 
-#textp{
+#textp {
     padding: 1rem;
     font-size: 1.3rem;
     font-weight: 900;
@@ -54,7 +54,7 @@
     transition: color 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     color: #E35047;
     background-color: #FFFFFF;
 }
@@ -74,7 +74,7 @@
     height: 80%;
     width: 40%;
     z-index: 1;
-    margin-right: -5%; 
+    margin-right: -5%;
 }
 
 .item1 img {
@@ -87,15 +87,16 @@
 .item2 {
 
     height: 95%;
-    width: 50%; 
+    width: 50%;
     background-color: #F3F4F6;
     z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.item2-content{
+
+.item2-content {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -104,12 +105,14 @@
     padding: 10rem;
     gap: 4rem;
 }
-.item2-content h2{
+
+.item2-content h2 {
     font-size: 2rem;
     font-weight: 600;
 }
-#gettouchbtn{
-    margin-left: -55%;
+
+#gettouchbtn {
+    margin-left: -45%;
     width: 15rem;
     padding: 15px 40px;
     background-color: #3069D7;
@@ -119,6 +122,7 @@
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 #gettouchbtn:hover {
     color: #3069D7;
     background-color: #FFFFFF;
@@ -126,11 +130,85 @@
 }
 
 
-.card-section{
+.card-section {
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+
+}
+
+@media (max-width: 667px) {
+
+    .content {
+        overflow-y: hidden;
+        margin-left: 0%;
+        margin-top: -5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .demo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* justify-content: center; */
+        gap: 1rem;
+ 
+
+    }
     
+    .item1 {
+        width: 100%;
+    }
+
+    .item1 img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .item2 {
+        width: 100%;
+    
+    
+    }
+    #gettouchbtn {
+        margin-left: 0;
+    }
+    .item2-content {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+   
+    }
+    #hfirst {
+        font-weight: 900;
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+
+    #hsecond {
+        font-weight: 700;
+        margin-top: 5px;
+        font-size: 2rem;
+        color: #E35047;
+    }
+
+    .btn {
+        width: 10rem;
+        padding: 8px 20px;
+        background-color: #E35047;
+        color: #FFFFFF;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
 }
