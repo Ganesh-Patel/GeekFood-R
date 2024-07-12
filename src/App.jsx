@@ -5,6 +5,7 @@ import Header from './mycomponents/Header/Header'
 import Body from './mycomponents/Body/Body'
 import Footer from './mycomponents/Footer/Footer'
 import Quote from './mycomponents/Quotes/Quote'
+import Restaurant from './mycomponents/Restaurant/Restaurant.jsx'
 
 
 const App = () => {
@@ -15,8 +16,8 @@ const App = () => {
               <Routes>
                   <Route path="/" element={<Body />} />
                   <Route path="/quote" element={<Quote />} />
-                  {/* <Route path="/resturents" element={<Resturents />} />
-                  <Route path="/foods" element={<Foods />} />
+                   <Route path="/Restaurant" element={<Restaurant />} />
+                  {/*<Route path="/foods" element={<Foods />} />
                   <Route path="/contact" element={<Contact />} /> */}
               </Routes>
               <Footer />

@@ -18,7 +18,7 @@ export default function Header() {
                 <ul className='nav-list'>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/quote">Quote</Link></li>
-                    <li><Link to="/resturents">Resturents</Link></li>
+                    <li><Link to="/Restaurant">Resturents</Link></li>
                     <li><Link to="/foods">Foods</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
@@ -36,7 +36,7 @@ export default function Header() {
                     <ul>
                         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
                         <li><Link to="/quote" onClick={toggleMenu}>Quote</Link></li>
-                        <li><Link to="/resturents" onClick={toggleMenu}>Resturents</Link></li>
+                        <li><Link to="/Restaurant" onClick={toggleMenu}>Resturents</Link></li>
                         <li><Link to="/foods" onClick={toggleMenu}>Foods</Link></li>
                         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
                     </ul>
