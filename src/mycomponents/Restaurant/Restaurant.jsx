@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Restaurant.css';
-import restaurants from './Data.js'
+import restaurants from './Data.js';
 import SearchFilter from "../SearchFilter/SearchFilter.jsx";
 import RatingFilter from "../RatingFilter/RatingFilter.jsx";
 import RestaurantCard from "../RestaurantCard/RestaurantCard.jsx";
 
+function Restaurant() {
+  const [searchKey, setSearchKey] = useState('');
+  const [rating, setRating] = useState(0);
 
-function Restaurant({}) {
+  const filteredRestaurants = restaurants.filter(res => 
+    res.name.toLowerCase().includes(searchKey.toLowerCase()) && res.rating >= rating
+  );
+
   return (
     <div className='main-content'>
       <div className="filters">
-        <SearchFilter onType={(searchKey) => {
-            setSearchKey(searchKey);
-          }} />
-        <RatingFilter onChange={(ratingCount) => {
-            setRating(ratingCount);
-          }} />
+        <SearchFilter onType={setSearchKey} />
+        <RatingFilter onChange={setRating} />
       </div>
       <div className="restaurants">
-        {restaurants.map((res) => {
-          return <RestaurantCard {...res} />;
+        {filteredRestaurants.map((res) => {
+          return <RestaurantCard key={res.id} {...res} />;
         })}
       </div>
     </div>
